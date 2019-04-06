@@ -1,0 +1,63 @@
+body{
+  .font;
+  .normal;
+  font-size: @fz;
+  line-height: @lh;
+  color: @text-color;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  .font-alt;
+  margin-bottom: 0.5 * @mb;
+  color:@title-color;
+}
+
+h1{
+  font-size: 3em;
+  .normal;
+}
+h2{
+  padding-top: 0.5 * @mb;
+  font-size: 2em;
+}
+h3{
+  padding-top: 0.5 * @mb;
+  font-size: 1.5em;
+}
+h4{
+  padding-top: 0.5 * @mb;
+  font-weight: 600;
+  //font-size: 1.5em;
+}
+
+p{
+  margin-bottom: @mb;
+}
+
+.lead{
+  font-size: 1.5 * @fz;
+  line-height: @lh;
+  .light;
+}
+
+a{  
+  color:@primary-color;
+  &:hover{
+    color:darken(@primary-color,7%);
+    text-decoration: underline;
+  }
+}
+
+i{
+  .italic;
+}
+strong{
+  .bold;
+}
+em{
+  .italic;
+  .bold;
+}

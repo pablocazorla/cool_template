@@ -1,0 +1,42 @@
+.container{
+  width: 100%;
+  min-height: 1px;
+  clear: both;
+  padding: 0 @container-p;
+  max-width: @container-w + (2 * @container-p);
+  margin: 0 auto;
+
+  &.no-padding{
+    padding: 0;
+  }
+
+  &.for-post{
+    max-width: @container-post-w + (2 * @container-p);
+  }
+}
+
+.main-box{
+  padding: (0.7 * @main-box-p) @main-box-p @main-box-p;
+  border-radius: @border-radius;
+
+  &.white{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  }
+}
+
+.page-content{
+  position: relative;
+  z-index: 30;
+  padding-bottom: 40px;
+  margin-bottom: -45vh;
+  .transition(transform .7s .2s cubic-bezier(0.7, 0, 0.3, 1));
+}
+
+.modified{
+  .page-content{
+
+    .transform(translateY(-45vh));
+    
+  }
+}

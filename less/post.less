@@ -1,0 +1,44 @@
+.post-header{
+  
+  
+  
+  
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #DDD;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .category,
+  .comments{
+    display: inline-block;
+  }
+
+  .category{
+    .bold;
+    .uppercase;
+  }
+
+  .comments{
+    font-size: 80%;
+  }
+}
+
+.post-content{
+
+
+
+
+
+  p {
+    text-align: justify;
+    text-indent: 2em;
+
+    &:first-child{
+      .lead;
+      text-indent:0;
+    }
+  }
+}
